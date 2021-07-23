@@ -21,6 +21,11 @@ Route::get('/cdr', function () {
     return view('cdr');
 });
 
+Route::get('/panel', function () {
+    return view('panel');
+});
+
+
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
